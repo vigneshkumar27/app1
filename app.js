@@ -54,20 +54,46 @@ const http = require('http');
 //     }
 // })
 
-const server = http.createServer((req,res)=>{
-    if(req.url === "/"){
-        res.end("home");
-    }
-    if(req.url === "/about"){
-        res.end("about");
-    }
-    if(req.url == "/files"){
-      res.end("files");
-    }
-})
+// const server = http.createServer((req,res)=>{
+//     if(req.url === "/"){
+//         res.end("home");
+//     }
+//     if(req.url === "/about"){
+//         res.end("about");
+//     }
+//     if(req.url == "/files"){
+//       res.end("files");
+//     }
+// })
 
-server.listen(5002,(err)=>{
-    if(!err){
-        console.log("Server running");
-    }
-});
+// server.listen(5002,(err)=>{
+//     if(!err){
+//         console.log("Server running");
+//     }
+// });
+
+//Asynchronous
+// console.log("First");
+// for(let i=0;i<5;i++){
+//     console.log(i);
+// }
+// console.log("six");
+
+
+//-------------------------------
+
+// Asynchronous
+
+// console.log("begin");
+// setTimeout(()=>{
+//     for(let i=0;i<7;i++){
+//         console.log(i);
+//     }
+// })
+// console.log("Lasting");
+
+
+
+
+
+
